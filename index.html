@@ -2,213 +2,256 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>$BPEP | Brown Pepe</title>
-  <meta name="description" content="Brown Pepe ($BPEP) — a community meme token on Base." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brown Pepe | $BPEP</title>
+  <meta name="description" content="🟤 Brown Pepe | $BPEP — Culture. Community. Memes. 0% tax." />
 
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <!-- Social preview (optional) -->
+  <meta property="og:title" content="Brown Pepe | $BPEP" />
+  <meta property="og:description" content="Culture. Community. Memes. No tax. Just vibes 🤎🐸" />
+  <meta property="og:image" content="assets/hero.png" />
+
+  <link rel="icon" href="assets/head.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <!-- Top Nav (like pepe.vip) -->
-  <header class="topbar" id="home">
-    <div class="wrap nav">
-      <a class="brand" href="#home">
-        <img src="assets/brand-title.png" alt="Brown Pepe" onerror="this.style.display='none'">
-        <span class="brandText">$BPEP</span>
-      </a>
+  <!-- Top bar -->
+  <header class="topbar">
+    <a class="brand" href="#home">
+      <img src="assets/head.png" alt="Brown Pepe" />
+      <span>Brown Pepe</span>
+    </a>
 
-      <nav class="menu">
-        <a href="#home">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#buy">HOW TO BUY</a>
-        <a id="bridgeLink" href="#" target="_blank" rel="noreferrer">BRIDGE</a>
-        <a href="#tokenomics">TOKENOMICS</a>
-        <a href="#roadmap">ROADMAP</a>
-      </nav>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#how">How to Buy</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#roadmap">Roadmap</a>
 
-      <a class="btn" id="buyBtnTop" href="#" target="_blank" rel="noreferrer">Buy Now</a>
-      <button class="hamburger" id="hamburger" aria-label="Open menu">☰</button>
-    </div>
-
-    <!-- Mobile menu -->
-    <div class="wrap mobileMenu" id="mobileMenu">
-      <a href="#home">HOME</a>
-      <a href="#about">ABOUT</a>
-      <a href="#buy">HOW TO BUY</a>
-      <a id="bridgeLinkM" href="#" target="_blank" rel="noreferrer">BRIDGE</a>
-      <a href="#tokenomics">TOKENOMICS</a>
-      <a href="#roadmap">ROADMAP</a>
-      <a class="btn full" id="buyBtnM" href="#" target="_blank" rel="noreferrer">Buy Now</a>
-    </div>
+      <!-- Replace links -->
+      <a class="btn btn-outline" href="#" target="_blank" rel="noreferrer">Telegram</a>
+      <a class="btn btn-solid" href="#" target="_blank" rel="noreferrer">Buy Now</a>
+    </nav>
   </header>
 
   <!-- Hero -->
-  <section class="hero">
-    <div class="wrap heroGrid">
-      <div>
-        <h1 class="title">$BPEP</h1>
-        <p class="subtitle">
-          A community-driven memecoin on <b>Base</b>. Inspired by Hispanic & Latino culture and internet meme energy.
-        </p>
+  <main id="home">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="kicker">🟤 Brown Pepe</div>
+          <h1>$BPEP</h1>
+          <p class="lead">Culture. Community. Memes.</p>
+          <p class="sublead">No roadmap. No promises. Just vibes 🤎🐸</p>
 
-        <div class="iconsRow">
-          <a id="xLink" href="#" target="_blank" rel="noreferrer" class="iconPill">X</a>
-          <a id="basescanLink" href="#" target="_blank" rel="noreferrer" class="iconPill">BaseScan</a>
-          <a id="dexLink" href="#" target="_blank" rel="noreferrer" class="iconPill">DEX</a>
-          <a id="cmcLink" href="#" target="_blank" rel="noreferrer" class="iconPill">CMC</a>
-        </div>
+          <div class="hero-cta">
+            <a class="btn btn-solid" href="#" target="_blank" rel="noreferrer">Buy Now</a>
+            <a class="btn btn-outline" href="#" target="_blank" rel="noreferrer">Telegram</a>
+          </div>
 
-        <div class="card">
-          <div class="cardTop">
-            <div>
-              <div class="label">Contract Address</div>
-              <div class="mono" id="contractText">0xYOUR_CONTRACT_ADDRESS</div>
+          <div class="stats">
+            <div class="stat">
+              <div class="k">Total Supply</div>
+              <div class="v">777,777,777,777</div>
             </div>
-            <div class="cardBtns">
-              <button class="btn2" id="copyBtn">Copy</button>
-              <a class="btn2 ghost" id="basescanBtn" href="#" target="_blank" rel="noreferrer">View</a>
+            <div class="stat">
+              <div class="k">Taxes</div>
+              <div class="v">0%</div>
+            </div>
+            <div class="stat">
+              <div class="k">Team Allocation</div>
+              <div class="v">20%</div>
+            </div>
+            <div class="stat">
+              <div class="k">Public Allocation</div>
+              <div class="v">80%</div>
             </div>
           </div>
-          <div class="hint">Always verify this address from official links (website + GitHub).</div>
-        </div>
 
-        <div class="heroBtns">
-          <a class="btn" id="buyBtn" href="#" target="_blank" rel="noreferrer">Buy Now</a>
-          <a class="btn ghost" href="Brown_Pepe_Whitepaper_v1.pdf" target="_blank" rel="noreferrer">Whitepaper</a>
-        </div>
-      </div>
+          <div class="pill-row">
+            <!-- Replace links -->
+            <a class="pill" href="#" target="_blank" rel="noreferrer">X</a>
+            <a class="pill" href="#" target="_blank" rel="noreferrer">Chart</a>
+            <a class="pill" href="#" target="_blank" rel="noreferrer">Contract</a>
+            <button class="pill" id="copyContract" type="button">Copy CA</button>
+          </div>
 
-      <div class="heroArt">
-        <img src="assets/logo.png" alt="Brown Pepe Logo" />
-      </div>
-    </div>
-  </section>
-
-  <!-- Exchange/Logo strip (like pepe.vip list) -->
-  <section class="strip">
-    <div class="wrap stripGrid">
-      <a href="#" class="stripItem">coinbase</a>
-      <a href="#" class="stripItem">binance</a>
-      <a href="#" class="stripItem">kraken</a>
-      <a href="#" class="stripItem">bybit</a>
-      <a href="#" class="stripItem">uniswap</a>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="section" id="about">
-    <div class="wrap">
-      <h2>ABOUT</h2>
-      <div class="twoCol">
-        <img class="sectionImg" src="assets/about.png" alt="About art" />
-        <div class="copy">
-          <p>
-            Brown Pepe ($BPEP) is a community meme token built on Base. It’s designed to be simple, transparent,
-            and community-first — meme-only for now, with room to evolve if the community wants more.
-          </p>
-          <p class="small">
-            Keep messaging respectful and inclusive. The project is inspired by culture, not claiming to speak for everyone.
+          <!-- Put your real CA in script.js -->
+          <p class="fineprint">
+            Public releases: <strong>10% of public allocation</strong> each release day
+            (that’s <strong>8% of total supply</strong> per release).
           </p>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- HOW TO BUY -->
-  <section class="section alt" id="buy">
-    <div class="wrap">
-      <h2>HOW TO BUY</h2>
+        <div class="hero-art">
+          <div class="art-card">
+            <img src="assets/hero.png" alt="Brown Pepe hero art" />
+          </div>
 
-      <div class="steps">
-        <div class="step">
-          <img src="assets/step1.png" alt="Wallet" />
-          <h3>Create a Wallet</h3>
-          <p>Install Coinbase Wallet or MetaMask.</p>
-        </div>
+          <div class="art-float art-float-left">
+            <img src="assets/head.png" alt="Brown Pepe head" />
+          </div>
 
-        <div class="step">
-          <img src="assets/step2.png" alt="ETH" />
-          <h3>Get ETH on Base</h3>
-          <p>Bridge ETH to Base or buy ETH and move it to Base.</p>
-        </div>
-
-        <div class="step">
-          <img src="assets/step3.png" alt="DEX" />
-          <h3>Go to a DEX</h3>
-          <p>Open Uniswap on Base (or your preferred Base DEX) and connect your wallet.</p>
-        </div>
-
-        <div class="step">
-          <img src="assets/step4.png" alt="Swap" />
-          <h3>Swap ETH for $BPEP</h3>
-          <p>Paste the contract address, confirm, and swap.</p>
+          <div class="art-float art-float-right">
+            <img src="assets/crown.png" alt="Brown Pepe crown" />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- TOKENOMICS -->
-  <section class="section" id="tokenomics">
-    <div class="wrap">
-      <h2>TOKENOMICS</h2>
-
-      <div class="tokenBox">
-        <div class="tokenRow">
-          <div class="tokenLabel">Token Supply:</div>
-          <div class="tokenValue">1,000,000,000</div>
-        </div>
-        <div class="tokenRow">
-          <div class="tokenLabel">Tax:</div>
-          <div class="tokenValue">1%</div>
-        </div>
-        <div class="tokenRow">
-          <div class="tokenLabel">Network:</div>
-          <div class="tokenValue">Base</div>
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Brown Pepe ($BPEP) says <span class="gold">SUP PAPI!</span></h2>
+          <p class="muted">
+            Brown Pepe is a culture-first meme coin built around community energy, internet humor,
+            and luxury vibes — without complicated promises.
+          </p>
         </div>
 
-        <p class="small">
-          1% tax helps support liquidity/community growth. Details and wallets should be published transparently.
+        <div class="grid-3">
+          <div class="card">
+            <h3>0% Tax</h3>
+            <p class="muted">No buy/sell tax. Keep it simple.</p>
+          </div>
+          <div class="card">
+            <h3>Fixed Supply</h3>
+            <p class="muted">777,777,777,777 total supply.</p>
+          </div>
+          <div class="card">
+            <h3>Community First</h3>
+            <p class="muted">Memes + community momentum. That’s the play.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to buy -->
+    <section id="how" class="section section-alt">
+      <div class="container">
+        <div class="section-head row">
+          <div>
+            <h2>How to Buy</h2>
+            <p class="muted">3 quick steps. Replace the text with your exact chain + DEX.</p>
+          </div>
+          <div class="badge">
+            <span class="dot"></span> Ready for Base / EVM
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <div class="card step">
+            <div class="step-num">1</div>
+            <h3>Buy ETH</h3>
+            <p class="muted">Fund your wallet with ETH for gas + swapping.</p>
+          </div>
+          <div class="card step">
+            <div class="step-num">2</div>
+            <h3>Import Token</h3>
+            <p class="muted">Paste the contract address into your DEX.</p>
+          </div>
+          <div class="card step">
+            <div class="step-num">3</div>
+            <h3>Swap for $BPEP</h3>
+            <p class="muted">Swap ETH → $BPEP and join the pond 🤎🐸</p>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn btn-solid" href="#" target="_blank" rel="noreferrer">Buy Now</a>
+          <a class="btn btn-outline" href="#" target="_blank" rel="noreferrer">Telegram</a>
+        </div>
+
+        <div class="side-art">
+          <img src="assets/shades.png" alt="Brown Pepe with shades" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Tokenomics -->
+    <section id="tokenomics" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Tokenomics</h2>
+          <p class="muted">Clear, simple, and public.</p>
+        </div>
+
+        <div class="split">
+          <div class="card">
+            <ul class="list">
+              <li><strong>Total Supply:</strong> 777,777,777,777</li>
+              <li><strong>Taxes:</strong> 0%</li>
+              <li><strong>Team:</strong> 20% of total supply</li>
+              <li><strong>Public:</strong> 80% of total supply</li>
+              <li><strong>Release Schedule:</strong> 10% of public allocation each release day</li>
+              <li><strong>Per Release (of total):</strong> 8% of total supply</li>
+            </ul>
+            <p class="fineprint">
+              Tip: publish your release dates in advance (website + X) for transparency.
+            </p>
+          </div>
+
+          <div class="card donut-wrap">
+            <div class="donut" aria-label="Tokenomics donut chart">
+              <div class="donut-center">
+                <div class="donut-title">Supply</div>
+                <div class="donut-sub">777,777,777,777</div>
+              </div>
+            </div>
+            <div class="legend">
+              <div class="leg">
+                <span class="swatch swatch-public"></span>
+                <span>Public 80%</span>
+              </div>
+              <div class="leg">
+                <span class="swatch swatch-team"></span>
+                <span>Team 20%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Roadmap -->
+    <section id="roadmap" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Roadmap</h2>
+          <p class="muted">No promises — just clear phases and consistent energy.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Phase 1: Launch</h3>
+            <p class="muted">Brand + socials + contract + first public release.</p>
+          </div>
+          <div class="card">
+            <h3>Phase 2: Community</h3>
+            <p class="muted">Meme contests, raids, collabs, and steady releases.</p>
+          </div>
+          <div class="card">
+            <h3>Phase 3: Big Push</h3>
+            <p class="muted">“Something huge is coming” moments + partnerships.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p class="muted">
+          Disclaimer: $BPEP is a meme token for entertainment purposes only. No guarantees, no financial promises.
+        </p>
+        <p class="muted small">
+          $BPEP has no association with Matt Furie or Pepe the Frog. This is a meme tribute only.
         </p>
       </div>
-    </div>
-  </section>
-
-  <!-- ROADMAP -->
-  <section class="section alt" id="roadmap">
-    <div class="wrap">
-      <h2>ROADMAP</h2>
-
-      <div class="road">
-        <div class="phase">
-          <h3>Phase 1: Meme</h3>
-          <p>Launch • Website • Community</p>
-        </div>
-        <div class="phase">
-          <h3>Phase 2: Vibe and HODL</h3>
-          <p>Growth • Listings • Partnerships</p>
-        </div>
-        <div class="phase">
-          <h3>Phase 3: Brown Takeover</h3>
-          <p>Community-led ideas • Optional expansions</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer disclaimer (pepe.vip style) -->
-  <footer class="footer">
-    <div class="wrap">
-      <p class="small">
-        Brown Pepe ($BPEP) is a memecoin with no intrinsic value or expectation of financial return. It is for entertainment only.
-      </p>
-      <p class="small">
-        This project is not affiliated with any third-party characters/brands. All content is community-created.
-      </p>
-      <p class="small">© <span id="year"></span> Brown Pepe. All rights reserved.</p>
-    </div>
-  </footer>
+    </footer>
+  </main>
 
   <script src="script.js"></script>
 </body>
