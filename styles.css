@@ -150,8 +150,39 @@ img{max-width:100%;display:block}
   background: rgba(0,0,0,.35);
   box-shadow: var(--shadow);
 }
-.art-float-left{left:-10px; bottom: -18px}
-.art-float-right{right:-8px; top: 18px}
+.hero-art{position:relative}
+
+.art-float{
+  position:absolute;
+  border-radius: 22px;
+  overflow:hidden;
+  border: 1px solid var(--line);
+  background: rgba(0,0,0,.35);
+  box-shadow: var(--shadow);
+}
+
+/* Head: bottom-left, slightly tucked in */
+.art-float-head{
+  width: 140px;
+  left: 14px;
+  bottom: 14px;
+}
+
+/* Crown: top-right, smaller, clean */
+.art-float-crown{
+  width: 170px;
+  right: 14px;
+  top: 14px;
+}
+
+/* Make sure floats don’t cover the hero image too much */
+.art-float-head img,
+.art-float-crown img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
 
 .section{padding: 56px 0}
 .section-alt{
