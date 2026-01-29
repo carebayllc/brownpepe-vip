@@ -1,19 +1,15 @@
-// Copy contract address
-const copyBtn = document.getElementById("copyBtn");
-const contractText = document.getElementById("contractText");
-if (copyBtn && contractText) {
+// Put your real contract address here:
+const CONTRACT_ADDRESS = "0xYOUR_CONTRACT_ADDRESS_HERE";
+
+const copyBtn = document.getElementById("copyContract");
+if (copyBtn) {
   copyBtn.addEventListener("click", async () => {
     try {
-      await navigator.clipboard.writeText(contractText.textContent.trim());
-      const old = copyBtn.textContent;
+      await navigator.clipboard.writeText(CONTRACT_ADDRESS);
       copyBtn.textContent = "Copied!";
-      setTimeout(() => (copyBtn.textContent = old), 1200);
-    } catch (e) {
-      alert("Copy failed. Please copy manually.");
+      setTimeout(() => (copyBtn.textContent = "Copy CA"), 1200);
+    } catch {
+      alert("Copy failed. Contract: " + CONTRACT_ADDRESS);
     }
   });
 }
-
-// Footer year
-const year = document.getElementById("year");
-if (year) year.textContent = new Date().getFullYear();
